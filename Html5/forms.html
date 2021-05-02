@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/action_page.php">
+        <p>
+            <label for="num">Input Number</label>
+            <input id="num" type="number" name="Number">
+        </p>
+        <p>
+            <label for="text">Input text</label>
+            <input id="text" type="text" name="Nber">
+        </p>
+        <p>
+            <label for="pwd">Input password</label>
+            <input id="pwd" type="password" name="Ner">
+        </p>
+        <input type="submit">
+    </form>
+    <hr>
+    <h2>Search Hijacking</h2>
+    <form action="https://www.reddit.com/search/">
+        <p><b>Reddit Search</b></p>
+        <p>
+            <label>Seach Item on Reddit</label>
+            <input type="text" name="q">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <p><b>Google Search</b></p>
+        <p>
+            <label>Seach Item on Google</label>
+            <input type="text" name="q">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <p><b>Youtube Search</b></p>
+        <p>
+            <label>Seach Item on Youtube</label>
+            <input type="text" name="search_query">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <form>
+        <h2>CheckBox</h2>
+        <input type="checkbox" name="tos" id="tos">
+        <label for="tos">Agree To</label>
+    </form>
+    <form action="/taco">
+        <h2>Radio Buttons</h2>
+        <input type="radio" name="1" id="1">
+        <label for="1">1</label>
+        <br>
+        <input type="radio" name="1" id="2">
+        <label for="2">2</label>
+        <br>
+        <input type="radio" name="1" id="3">
+        <label for="3">3</label>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="/taco">
+        <h2>Select</h2>
+        <label for="">Select Food</label>
+        <select name="food" id="food">
+            <option value="fish">fish</option>
+            <option value="chicken">chicken</option>
+            <option value="vegan">vegan</option>
+        </select>
+        <br>
+        <label>Amount</label>
+        <input type="range" min="1" max="10" name="amount">
+        <br>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form actiom="/dummy">
+        <p>
+            <label for="first">Firstname</label>
+            <input type="text" required minlength="5">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
